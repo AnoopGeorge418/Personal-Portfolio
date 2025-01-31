@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Serif Todhri", serif;
+}
+
+.nav-container{
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: .5rem;
+    padding: 0rem;
+}
+
+.nav-website__logo a{
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.nav-website__logo{
+    display: inline-block;
+}
+
+.nav-website__logo:hover{
+    animation: shake 1s ease-in 1s 3 normal;
+}
+
+.nav__items ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    /* background-color: lightgray; */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.nav__items a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav__items li{
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+.nav__items li:hover{
+    background-color: darkgray;
+    padding: 0.5rem 1rem;
+    animation: shake 1s ease-in-out 1s 3 normal;
+}
+
+.nav__aichat{
+    display: inline-block;
+}
+
+.nav__aichat:hover{
+    animation: shake 1s ease-in-out 1s 5 normal;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }  /* Start position */
+    25% { transform: translateX(-5px); }  /* Move left */
+    50% { transform: translateX(5px); }  /* Move right */
+    75% { transform: translateX(-5px); }  /* Move left again */
+    100% { transform: translateX(0); }  /* Return to original position */
+}
